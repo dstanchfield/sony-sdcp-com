@@ -1,6 +1,6 @@
 const net = require('net')
 const Bacon = require('baconjs')
-const {commands, actions, aspectRatio, powerStatus} = require('./commands')
+const {commands, actions, aspectRatio, powerStatus, picturePosition} = require('./commands')
 
 function RawSdcpClient(config = {}) {
 	debug('Connecting to ', {port: config.port, address: config.address})
