@@ -15,7 +15,8 @@ const commands = {
   INPUT: '0001',
   GET_STATUS_ERROR: '0101',
   GET_STATUS_POWER: '0102',
-  GET_STATUS_LAMP_TIMER: '0113'
+  GET_STATUS_LAMP_TIMER: '0113',
+  PICTURE_POSITION: '0066',
 }
 
 const aspectRatio = {
@@ -34,6 +35,14 @@ const powerStatus = {
   POWER_ON: '0003',
   COOLING: '0004',
   COOLING2: '0005'
+}
+
+const picturePosition = {
+  POS_1_85: '0000',
+  POS_2_35: '0001',
+  CUSTOM_1: '0002',
+  CUSTOM_2: '0003',
+  CUSTOM_3: '0004'
 }
 
 module.exports = {
