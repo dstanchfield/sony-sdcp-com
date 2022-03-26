@@ -49,5 +49,6 @@ module.exports = {
   commands,
   actions,
   aspectRatio,
-  powerStatus
+  powerStatus,
+  picturePosition
 }
