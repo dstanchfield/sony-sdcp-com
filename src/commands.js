@@ -17,6 +17,7 @@ const commands = {
   GET_STATUS_POWER: '0102',
   GET_STATUS_LAMP_TIMER: '0113',
   PICTURE_POSITION: '0066',
+  BLANKING: '00C8',
 }
 
 const aspectRatio = {
@@ -45,10 +46,16 @@ const picturePosition = {
   CUSTOM_3: '0004'
 }
 
+const blanking = {
+  OFF: '0000',
+  ON: '0001'
+}
+
 module.exports = {
   commands,
   actions,
   aspectRatio,
   powerStatus,
-  picturePosition
+  picturePosition,
+  blanking
 }

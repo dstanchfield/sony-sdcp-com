@@ -1,6 +1,6 @@
 const Bacon = require('baconjs')
 const RawSdcpClient = require('./raw-client')
-const {commands, actions, aspectRatio, powerStatus, picturePosition} = require('./commands')
+const {commands, actions, aspectRatio, powerStatus, picturePosition, blanking} = require('./commands')
 
 function SdcpClient(config = {}) {
 	const rawClient = RawSdcpClient(config)
@@ -75,5 +75,6 @@ module.exports = {
 	actions,
 	aspectRatio,
 	powerStatus,
-	picturePosition
+	picturePosition,
+	blanking
 }
